@@ -32,6 +32,8 @@ function hideSideBar()
         $('#hideSidebarButton').removeClass('sidebar_hidden');
         setCookie('sidebar_hide', 'show', 100);
     }
+
+    $("#sidebar").trigger("hideSidebar")
 }
 
 $(function() {
